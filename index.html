@@ -235,6 +235,42 @@
             color: rgba(255, 255, 255, 0.9);
         }
 
+        /* 実績 */
+        .achievements {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .achievement-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .achievement-name {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #a78bfa;
+        }
+
+        .achievement-links a {
+            display: inline-block;
+            margin: 5px 10px;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .achievement-links a:hover {
+            color: #ec4899;
+        }
+
         /* メンバー紹介 */
         .members {
             display: grid;
@@ -311,6 +347,7 @@
         <a href="#home"><span class="lang-ja">ホーム</span><span class="lang-en">Home</span></a>
         <a href="#video"><span class="lang-ja">プロモーションビデオ</span><span class="lang-en">Promotional Video</span></a>
         <a href="#products"><span class="lang-ja">プロダクト紹介</span><span class="lang-en">Products</span></a>
+        <a href="#achievements"><span class="lang-ja">実績</span><span class="lang-en">Achievements</span></a>
         <a href="#members"><span class="lang-ja">メンバー</span><span class="lang-en">Members</span></a>
         <a href="#contact"><span class="lang-ja">お問い合わせ</span><span class="lang-en">Contact</span></a>
     </nav>
@@ -339,7 +376,7 @@
         <h2 class="section-title lang-en">Promotional Video</h2>
         <div class="video-container">
             <!-- YouTube動画のリンクをここに埋め込んでください -->
-            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/aHgcSVWnUmc?si=pwT-Kba7ruzBBmdz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </section>
 
@@ -350,27 +387,60 @@
         <div class="products">
             <div class="product-card">
                 <div class="product-image">
-                    <img src="./images/products/project1.png" alt="怪異について知る映像体験">
+                    <img src="./images/products/project1.png" alt="怪異について知る映像体験" style="object-fit: fill; width: 350px; height: 200px;">
                 </div>
-                <p class="product-text lang-ja">伝承を多感覚的に学ぶための没入型体験</p>
-                <p class="product-text lang-en">Immersive experience for learning folklore through multiple senses</p>
+                <p class="product-text lang-ja">
+                        伝承を多感覚的に学ぶための没入体験
+                </p>
+                <p class="product-text lang-en">
+                        Immersive experience for learning folklore through multiple senses
+                </p>
             </div>
             <div class="product-card">
                 <div class="product-image">
-                    <!--<img src="./images/products/project2.png" alt="怪異をビジュアル化する妖怪生成">-->
+                    <img src="./images/products/project2.png" alt="怪異をビジュアル化する妖怪生成" style="object-fit: fill; width: 200px; height: 200px;">
                 </div>
-                <p class="product-text lang-ja">体験者の怪異体験を基に生成AIを用いて新たな妖怪を創造する体験</p>
-                <p class="product-text lang-en">Experience to create new yokai using generative AI based on supernatural experiences</p>
+                <center>
+                <p class="product-text lang-ja">
+                        体験者の怪異体験を基に<br>生成AIを用いた妖怪作り
+                </p>
+                <p class="product-text lang-en">
+                    Experience to create new yokai using generative AI based on supernatural experiences
+                </p>
+                </center>
             </div>
             <div class="product-card">
                 <div class="product-image">
-                    <img src="./images/products/project3.png" alt="デジタルアースで妖怪をマッピングする">
+                    <img src="./images/products/project3.png" alt="デジタルアースで妖怪をマッピングする" style="object-fit: fill; width: 350px; height: 200px;">
                 </div>
-                <p class="product-text lang-ja">生成された妖怪と過去の伝承をデジタルアース上に時空間的に可視化する体験</p>
+                <p class="product-text lang-ja">生成された妖怪と過去の伝承を<br>デジタルアース上での時空間する体験</p>
                 <p class="product-text lang-en">Experience to spatiotemporally visualize generated yokai and past folklore on digital earth</p>
             </div>
         </div>
     </section>
+
+    <!-- 実績紹介 -->
+    <section id="achievements">
+        <h2 class="section-title lang-ja">実績</h2>
+        <h2 class="section-title lang-en">Achievements</h2>
+        <div class="achievements">
+            <div class="achievement-card">
+                <div class="achievement-image">
+                    <img src="./images/achievements/pitch-20250912.jpg" alt="発表者：icchy" style="object-fit: fill; width: 350px; height: 200px;">
+                </div>
+                <center>
+                <p class="achievement-text lang-ja">
+                        Tokyo Node "XR HACKATHON" の <br> Final Pitch
+                </p>
+                <p class="achievement-text lang-en">
+                        Final Pitch of Tokyo Node "XR HACKATHON"
+                </p>
+                <a href="https://www.tokyonode.jp/lab/events/20250619_01/index.html" target="_blank">Webpage</a>
+                </center>
+            </div>
+        </div>
+    </section>
+
 
     <!-- メンバー紹介 -->
     <section id="members">
@@ -378,17 +448,16 @@
         <h2 class="section-title lang-en">Members</h2>
         <div class="members">
             <div class="member-card">
-                <img src="./images/icon/icchy.jpg">
+                <img src="./images/icon/icchy.jpg" style="object-fit: fill; width: 200px; height: 200px;">
                 <h3 class="member-name lang-ja">いっちー</h3>
                 <h3 class="member-name lang-en">Icchy</h3>
                 <div class="member-links">
-                    <a href="https://x.com/icchy_yakumo" target="_blank">X (Twitter)</a>
-                    <a href="https://ultra-citron-588.notion.site/icchy-ba0bd360576641b2b01c6dd7b3b3ef25?pvs=74" target="_blank" class="lang-ja">ポートフォリオ</a>
+                    <a href="https://x.com/icchy_yakumo" target="_blank">SNS</a>
                     <a href="https://ultra-citron-588.notion.site/icchy-ba0bd360576641b2b01c6dd7b3b3ef25?pvs=74" target="_blank" class="lang-en">Portfolio</a>
                 </div>
             </div>
             <div class="member-card">
-                <img src="./images/icon/RiriIkebe.jpg">
+                <img src="./images/icon/RiriIkebe.jpg" style="object-fit: fill; width: 200px; height: 200px;">
                 <h3 class="member-name lang-ja">池辺　莉々</h3>
                 <h3 class="member-name lang-en">Riri Ikebe</h3>
                 <div class="member-links">
@@ -396,7 +465,7 @@
                 </div>
             </div>
             <div class="member-card">
-                <img src="./images/icon/KosukeShimizu.jpg">
+                <img src="./images/icon/KosukeShimizu.jpg" style="object-fit: fill; width: 200px; height: 200px;">
                 <h3 class="member-name lang-ja">清水　紘輔</h3>
                 <h3 class="member-name lang-en">Kosuke Shimizu</h3>
                 <div class="member-links">
@@ -404,7 +473,7 @@
                 </div>
             </div>
             <div class="member-card">
-                <!--<img src="./images/icon/MiraiHishikawa.jpg">-->
+                <img src="./images/icon/MiraiHishikawa.jpg" style="object-fit: fill; width: 200px; height: 200px;">
                 <h3 class="member-name lang-ja">干川　未来</h3>
                 <h3 class="member-name lang-en">Mirai Hoshikawa</h3>
                 <div class="member-links">
